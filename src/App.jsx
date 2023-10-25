@@ -1,17 +1,10 @@
 import './App.css'
 import { useEffect, useState } from "react"
 
-import Intro from './components/intro'
+import Intro from './components/Intro'
 import Footer from './components/Footer'
 import {Header,Home,Loginpage} from './paths'
-// import Moviecard from './components/Moviecard'
-// import Moviedetails from './components/Moviedetails'
-// import Ticketpage from './components/Ticketpage'
-// import {SelectSeat} from './components/SelectSeat'
-// import Checkout from './components/Checkout'
-// import Carddetails from './components/Carddetails'
 import { images } from './Utiliity'
-// import Payment from './components/Payment'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import Moviedetails from './components/Moviedetails'
 import Watchlist from './components/Watchlist'
@@ -31,8 +24,8 @@ function App() {
   useEffect(() => {
 
 
-    navigate("/login");
-}, [navigate]);
+    navigate("/login")
+}, []);
 
 
   return (

@@ -1,4 +1,3 @@
-import React from 'react'
 import { AiFillCreditCard } from 'react-icons/ai'
 import { BsArrowLeft } from 'react-icons/bs'
 

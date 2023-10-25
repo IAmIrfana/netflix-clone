@@ -1,0 +1,5 @@
+[build]
+  base = "/" # Set the base path if your app isn't hosted at the root
+  publish = "dist" # Output directory defined in Vite config
+  command = "npm run build"
+    

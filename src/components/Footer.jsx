@@ -7,7 +7,7 @@ function Footer(){
     return(
         <div className="fixed bg-black bottom-0  w-[100%] py-1" >
             <div className="text-3xl flex justify-evenly">
-                <AiFillHome className=""/>
+                <Link to={`/`}><AiFillHome className=""/></Link>
               <Link to={"/watchlist"}>
                 <BsFillBookmarkPlusFill/>
                 </Link>
