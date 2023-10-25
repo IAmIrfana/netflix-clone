@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { BsArrowLeft } from 'react-icons/bs'
-import { BiBookmarkAltPlus, BiMessageSquareMinus } from 'react-icons/bi'
+import { BiBookmarkAltPlus } from 'react-icons/bi'
 import { FiFileMinus, FiFilePlus } from 'react-icons/fi'
 import SelectSeat from './SelectSeat'
 // import {CiSquarePlus} from 'react-icons/ci'

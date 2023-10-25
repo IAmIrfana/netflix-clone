@@ -13,7 +13,7 @@ const Watchlist = () => {
 
         </div>
         <div className='flex gap-6 mt-4 w-[100vh]'>
-            <img className='h-[40vh] object-contain' src="src/assets/watchlist1.jpg" alt="" />
+            <img className='h-[40vh] object-contain' src="/watchlist1.jpg" alt="" />
             <div className='mt-5'>
                <h1 className='font-bold text-2xl'>Persuasion (2022) </h1>
                <div className='flex gap-2 my-5'>
@@ -27,7 +27,7 @@ const Watchlist = () => {
 </div>
         </div>
         <div className='flex gap-6 mt-10 w-[100vh]'>
-            <img className='h-[50vh]  object-contain' src="src/assets/watchlist3.jpg" alt="" />
+            <img src="/watchlist2.jpg" alt="" className='h-[50vh]  object-contain'  />
             <div className='mt-5'>
                <h1 className='font-bold text-2xl'> Ghostbusters: <br />Afterlife (2022)</h1>
                <div className='flex gap-2 my-5'>
@@ -41,7 +41,7 @@ const Watchlist = () => {
 </div>
         </div>
         <div className='flex gap-6 mt-10 w-[100vh]'>
-            <img className='h-[40vh] object-contain' src="src/assets/watchlist4.jpg" alt="" />
+            <img className='h-[40vh] object-contain' src="/watchlist4.jpg" alt="" />
             <div className='mt-5'>
                <h1 className='font-bold text-2xl'> The Weekend Away (2022)</h1>
                <div className='flex gap-2 my-5'>
