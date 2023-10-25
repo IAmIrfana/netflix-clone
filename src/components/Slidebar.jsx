@@ -30,6 +30,7 @@ function Slidebar(){
         return () => {
           clearInterval(intervalId);
         };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [images, nextImage]);
     return(
         <div className="relative">

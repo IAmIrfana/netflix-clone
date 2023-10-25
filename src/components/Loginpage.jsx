@@ -19,8 +19,8 @@ function Loginpage(){
 
                 </div>
                 </Link>
-                <div className="w-[400px] ">
-                    <button className=" w-[61vh] p-3 flex gap-10 items-center  border rounded-xl "><img className="w-5" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="icon" /> <h1 className="px-12">Continue with Google</h1></button>
+                <div >
+                    <button className=" w-[61vh] p-3 flex justify-between items-center  border rounded-xl "><img className="w-5" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="icon" /> <h1 className="px-12">Continue with Google</h1></button>
                 </div>
                 <h1>Or</h1>
                 <div>

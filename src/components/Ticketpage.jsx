@@ -6,12 +6,31 @@ import SelectSeat from './SelectSeat'
 // import {CiSquarePlus} from 'react-icons/ci'
 // eslint-disable-next-line react/prop-types
 const Ticketpage = ({ setToggleTicket }) => {
-    const [count, setCount] = useState(0)
-    const decrement = () => {
-        if (count > 0) {
-            setCount(count - 1);
-        }
-    };
+    const [adultCount,setAdultCount] = useState(0)
+    const [childCount,setChildCount] = useState(0)
+    const [seniorCount,setSeniorCount] = useState(0)
+
+    const add = (value) => {
+        console.log(value);
+        value === "child" && setChildCount(childCount+1)
+        value === "senior" && setSeniorCount(seniorCount+1)
+        value === "adult" && setAdultCount(adultCount+1)
+        
+      };
+      const less = (value) => {
+        console.log(value);
+        if (
+            (value === "child" && childCount > 0) ||
+            (value === "senior" && seniorCount > 0) ||
+            (value === "adult" && adultCount > 0)
+          ) {
+            value === "child" && setChildCount(childCount - 1);
+            value === "senior" && setSeniorCount(seniorCount - 1);
+            value === "adult" && setAdultCount(adultCount - 1);
+          }      }
+
+
+
     const [toggleSeat, setToggleSeat] = useState(false)
 
     // const increment()=>
@@ -50,9 +69,8 @@ const Ticketpage = ({ setToggleTicket }) => {
                 <div className='flex justify-around text-2xl font-bold items-center'>
                     <h1>Adult <br />Rs 200</h1>
                     <div className='flex  gap-6'>
-                        <FiFileMinus onClick={decrement} />
-                        <p>{count}</p>
-                        <FiFilePlus onClick={() => setCount(count + 1)} />
+                        <FiFileMinus onClick={()=>less ("adult")} />{adultCount}
+                        <FiFilePlus onClick={() => add("adult")} />
 
                     </div>
                 </div>
@@ -60,9 +78,8 @@ const Ticketpage = ({ setToggleTicket }) => {
                     <h1>Senior <br />Rs 150</h1>
                     <div className='flex  gap-6'>
 
-                        <FiFileMinus onClick={decrement} />
-                        <p>{count}</p>
-                        <FiFilePlus onClick={() => setCount(count + 1)} />
+                        <FiFileMinus onClick={()=>less("senior")} />{seniorCount}
+                        <FiFilePlus onClick={() => add("senior")} />
 
                     </div>
                 </div>
@@ -70,9 +87,8 @@ const Ticketpage = ({ setToggleTicket }) => {
                     <h1>Child <br />Rs 120</h1>
                     <div className='flex  gap-6'>
 
-                        <FiFileMinus onClick={decrement} />
-                        <p>{count}</p>
-                        <FiFilePlus onClick={() => setCount(count + 1)} />
+                        <FiFileMinus onClick={()=>less("child")} />{childCount}
+                        <FiFilePlus onClick={() => add("child")} />
 
                     </div>
 

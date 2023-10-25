@@ -1,4 +1,3 @@
-import { React } from "react";
 import { FiSearch } from "react-icons/fi"
 import { GoLocation } from "react-icons/go"
 import { IoMdNotificationsOutline } from "react-icons/io"
